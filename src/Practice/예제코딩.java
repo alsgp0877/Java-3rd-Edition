@@ -90,12 +90,34 @@ public class 예제코딩 {
 	 * System.out.printf("%d\t %d\n",i%3,i/3); } }
 	 */
 	
-	public static void main(String[] args) {
-		int i=5;
-		while(--i!=0) {
-			System.out.printf(i+"- i can do it");
+	/*
+	 * //예제 4-23 while문 public static void main(String[] args) { int i=5;
+	 * while(--i!=0) { System.out.printf(i+"- i can do it");
+	 * 
+	 * } }
+	 */
+	
+	//4-30 break문
+	public static void main(String[] args) { 
+		int sum=0;
+		int i=0;
+		
+		while(true) {
+			if(sum>100) {
+				break;
+			}
+			//--break문이 수행되면 이 부분은 실행되지 않고 while문을 완전히 벗어난다.
+			++i;
+			sum+=i;
+			//--
 			
-		}
+		}//end of while
+	  
+		System.out.println("i="+i); 
+		System.out.println("sum="+sum);
+	  
 	}
+	
+	
 }
 
